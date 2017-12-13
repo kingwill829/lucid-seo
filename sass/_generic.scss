@@ -1,0 +1,35 @@
+/* Responsive Images */
+img {
+	max-width:100%;
+	height:auto;
+}
+
+i {font-style:italic;}
+/* text aligns */
+.tac {text-align:center;}
+.tal {text-align:left;}
+.tar {text-align:right;}
+
+/* Margins */
+.marb_d {margin-bottom:$baseline;}
+
+/* Clear */
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+.show-code {
+	background-color:$dark_blue ;
+	padding:8px; 
+	color:$orange;
+	font-family:$heading;
+	margin-bottom:16px;
+}
+

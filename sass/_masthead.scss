@@ -1,0 +1,27 @@
+#masthead {
+	background-color:rgba(38,46,64,0.9);
+	color:$orange;
+	font-family: 'Sintony', sans-serif;
+	position:fixed;
+	width:100%;
+	display:flex;
+	justify-content:flex-start;
+	z-index:9999;
+}
+#site-logo {
+	padding:16px; 
+}
+nav {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.nav {
+	li {
+		display:inline;
+		margin-right:10px;
+	}
+}
+footer {
+	margin:$baseline 0;
+}
