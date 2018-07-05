@@ -1,8 +1,2147 @@
-@charset "UTF-8";html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}/*!
+@charset "UTF-8";
+/* line 1, sass/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 22, sass/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 26, sass/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 29, sass/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 32, sass/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 35, sass/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 40, sass/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*!
  * Bootstrap v3.3.4 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- *//*!
+ */
+/*!
  * Generated using the Bootstrap Customizer (http://getbootstrap.com/customize/?id=8688ce5f3ad584fadb28)
  * Config saved to config.json and https://gist.github.com/8688ce5f3ad584fadb28
- *//*! normalize.css v3.0.2 | MIT License | git.io/normalize */html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:0.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace, monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}html{font-size:10px;-webkit-tap-highlight-color:transparent}body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;line-height:1.42857143;color:#333;background-color:#fff}input,button,select,textarea{font-family:inherit;font-size:inherit;line-height:inherit}a{color:#337ab7;text-decoration:none}a:hover,a:focus{color:#23527c;text-decoration:underline}a:focus{outline:thin dotted;outline:5px auto -webkit-focus-ring-color;outline-offset:-2px}figure{margin:0}img{vertical-align:middle}.img-responsive{display:block;max-width:100%;height:auto}.img-rounded{border-radius:6px}.img-thumbnail{padding:4px;line-height:1.42857143;background-color:#fff;border:1px solid #ddd;border-radius:4px;-webkit-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;display:inline-block;max-width:100%;height:auto}.img-circle{border-radius:50%}hr{margin-top:20px;margin-bottom:20px;border:0;border-top:1px solid #eee}.sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);border:0}.sr-only-focusable:active,.sr-only-focusable:focus{position:static;width:auto;height:auto;margin:0;overflow:visible;clip:auto}[role="button"]{cursor:pointer}.container{margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px}@media (min-width: 768px){.container{width:750px}}@media (min-width: 992px){.container{width:970px}}@media (min-width: 1200px){.container{width:1170px}}.container-fluid{margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px}.row{margin-left:-15px;margin-right:-15px}.col-xs-1,.col-sm-1,.col-md-1,.col-lg-1,.col-xs-2,.col-sm-2,.col-md-2,.col-lg-2,.col-xs-3,.col-sm-3,.col-md-3,.col-lg-3,.col-xs-4,.col-sm-4,.col-md-4,.col-lg-4,.col-xs-5,.col-sm-5,.col-md-5,.col-lg-5,.col-xs-6,.col-sm-6,.col-md-6,.col-lg-6,.col-xs-7,.col-sm-7,.col-md-7,.col-lg-7,.col-xs-8,.col-sm-8,.col-md-8,.col-lg-8,.col-xs-9,.col-sm-9,.col-md-9,.col-lg-9,.col-xs-10,.col-sm-10,.col-md-10,.col-lg-10,.col-xs-11,.col-sm-11,.col-md-11,.col-lg-11,.col-xs-12,.col-sm-12,.col-md-12,.col-lg-12{position:relative;min-height:1px;padding-left:15px;padding-right:15px}.col-xs-1,.col-xs-2,.col-xs-3,.col-xs-4,.col-xs-5,.col-xs-6,.col-xs-7,.col-xs-8,.col-xs-9,.col-xs-10,.col-xs-11,.col-xs-12{float:left}.col-xs-12{width:100%}.col-xs-11{width:91.66666667%}.col-xs-10{width:83.33333333%}.col-xs-9{width:75%}.col-xs-8{width:66.66666667%}.col-xs-7{width:58.33333333%}.col-xs-6{width:50%}.col-xs-5{width:41.66666667%}.col-xs-4{width:33.33333333%}.col-xs-3{width:25%}.col-xs-2{width:16.66666667%}.col-xs-1{width:8.33333333%}.col-xs-pull-12{right:100%}.col-xs-pull-11{right:91.66666667%}.col-xs-pull-10{right:83.33333333%}.col-xs-pull-9{right:75%}.col-xs-pull-8{right:66.66666667%}.col-xs-pull-7{right:58.33333333%}.col-xs-pull-6{right:50%}.col-xs-pull-5{right:41.66666667%}.col-xs-pull-4{right:33.33333333%}.col-xs-pull-3{right:25%}.col-xs-pull-2{right:16.66666667%}.col-xs-pull-1{right:8.33333333%}.col-xs-pull-0{right:auto}.col-xs-push-12{left:100%}.col-xs-push-11{left:91.66666667%}.col-xs-push-10{left:83.33333333%}.col-xs-push-9{left:75%}.col-xs-push-8{left:66.66666667%}.col-xs-push-7{left:58.33333333%}.col-xs-push-6{left:50%}.col-xs-push-5{left:41.66666667%}.col-xs-push-4{left:33.33333333%}.col-xs-push-3{left:25%}.col-xs-push-2{left:16.66666667%}.col-xs-push-1{left:8.33333333%}.col-xs-push-0{left:auto}.col-xs-offset-12{margin-left:100%}.col-xs-offset-11{margin-left:91.66666667%}.col-xs-offset-10{margin-left:83.33333333%}.col-xs-offset-9{margin-left:75%}.col-xs-offset-8{margin-left:66.66666667%}.col-xs-offset-7{margin-left:58.33333333%}.col-xs-offset-6{margin-left:50%}.col-xs-offset-5{margin-left:41.66666667%}.col-xs-offset-4{margin-left:33.33333333%}.col-xs-offset-3{margin-left:25%}.col-xs-offset-2{margin-left:16.66666667%}.col-xs-offset-1{margin-left:8.33333333%}.col-xs-offset-0{margin-left:0}@media (min-width: 768px){.col-sm-1,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-sm-10,.col-sm-11,.col-sm-12{float:left}.col-sm-12{width:100%}.col-sm-11{width:91.66666667%}.col-sm-10{width:83.33333333%}.col-sm-9{width:75%}.col-sm-8{width:66.66666667%}.col-sm-7{width:58.33333333%}.col-sm-6{width:50%}.col-sm-5{width:41.66666667%}.col-sm-4{width:33.33333333%}.col-sm-3{width:25%}.col-sm-2{width:16.66666667%}.col-sm-1{width:8.33333333%}.col-sm-pull-12{right:100%}.col-sm-pull-11{right:91.66666667%}.col-sm-pull-10{right:83.33333333%}.col-sm-pull-9{right:75%}.col-sm-pull-8{right:66.66666667%}.col-sm-pull-7{right:58.33333333%}.col-sm-pull-6{right:50%}.col-sm-pull-5{right:41.66666667%}.col-sm-pull-4{right:33.33333333%}.col-sm-pull-3{right:25%}.col-sm-pull-2{right:16.66666667%}.col-sm-pull-1{right:8.33333333%}.col-sm-pull-0{right:auto}.col-sm-push-12{left:100%}.col-sm-push-11{left:91.66666667%}.col-sm-push-10{left:83.33333333%}.col-sm-push-9{left:75%}.col-sm-push-8{left:66.66666667%}.col-sm-push-7{left:58.33333333%}.col-sm-push-6{left:50%}.col-sm-push-5{left:41.66666667%}.col-sm-push-4{left:33.33333333%}.col-sm-push-3{left:25%}.col-sm-push-2{left:16.66666667%}.col-sm-push-1{left:8.33333333%}.col-sm-push-0{left:auto}.col-sm-offset-12{margin-left:100%}.col-sm-offset-11{margin-left:91.66666667%}.col-sm-offset-10{margin-left:83.33333333%}.col-sm-offset-9{margin-left:75%}.col-sm-offset-8{margin-left:66.66666667%}.col-sm-offset-7{margin-left:58.33333333%}.col-sm-offset-6{margin-left:50%}.col-sm-offset-5{margin-left:41.66666667%}.col-sm-offset-4{margin-left:33.33333333%}.col-sm-offset-3{margin-left:25%}.col-sm-offset-2{margin-left:16.66666667%}.col-sm-offset-1{margin-left:8.33333333%}.col-sm-offset-0{margin-left:0}}@media (min-width: 992px){.col-md-1,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-10,.col-md-11,.col-md-12{float:left}.col-md-12{width:100%}.col-md-11{width:91.66666667%}.col-md-10{width:83.33333333%}.col-md-9{width:75%}.col-md-8{width:66.66666667%}.col-md-7{width:58.33333333%}.col-md-6{width:50%}.col-md-5{width:41.66666667%}.col-md-4{width:33.33333333%}.col-md-3{width:25%}.col-md-2{width:16.66666667%}.col-md-1{width:8.33333333%}.col-md-pull-12{right:100%}.col-md-pull-11{right:91.66666667%}.col-md-pull-10{right:83.33333333%}.col-md-pull-9{right:75%}.col-md-pull-8{right:66.66666667%}.col-md-pull-7{right:58.33333333%}.col-md-pull-6{right:50%}.col-md-pull-5{right:41.66666667%}.col-md-pull-4{right:33.33333333%}.col-md-pull-3{right:25%}.col-md-pull-2{right:16.66666667%}.col-md-pull-1{right:8.33333333%}.col-md-pull-0{right:auto}.col-md-push-12{left:100%}.col-md-push-11{left:91.66666667%}.col-md-push-10{left:83.33333333%}.col-md-push-9{left:75%}.col-md-push-8{left:66.66666667%}.col-md-push-7{left:58.33333333%}.col-md-push-6{left:50%}.col-md-push-5{left:41.66666667%}.col-md-push-4{left:33.33333333%}.col-md-push-3{left:25%}.col-md-push-2{left:16.66666667%}.col-md-push-1{left:8.33333333%}.col-md-push-0{left:auto}.col-md-offset-12{margin-left:100%}.col-md-offset-11{margin-left:91.66666667%}.col-md-offset-10{margin-left:83.33333333%}.col-md-offset-9{margin-left:75%}.col-md-offset-8{margin-left:66.66666667%}.col-md-offset-7{margin-left:58.33333333%}.col-md-offset-6{margin-left:50%}.col-md-offset-5{margin-left:41.66666667%}.col-md-offset-4{margin-left:33.33333333%}.col-md-offset-3{margin-left:25%}.col-md-offset-2{margin-left:16.66666667%}.col-md-offset-1{margin-left:8.33333333%}.col-md-offset-0{margin-left:0}}@media (min-width: 1200px){.col-lg-1,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-lg-10,.col-lg-11,.col-lg-12{float:left}.col-lg-12{width:100%}.col-lg-11{width:91.66666667%}.col-lg-10{width:83.33333333%}.col-lg-9{width:75%}.col-lg-8{width:66.66666667%}.col-lg-7{width:58.33333333%}.col-lg-6{width:50%}.col-lg-5{width:41.66666667%}.col-lg-4{width:33.33333333%}.col-lg-3{width:25%}.col-lg-2{width:16.66666667%}.col-lg-1{width:8.33333333%}.col-lg-pull-12{right:100%}.col-lg-pull-11{right:91.66666667%}.col-lg-pull-10{right:83.33333333%}.col-lg-pull-9{right:75%}.col-lg-pull-8{right:66.66666667%}.col-lg-pull-7{right:58.33333333%}.col-lg-pull-6{right:50%}.col-lg-pull-5{right:41.66666667%}.col-lg-pull-4{right:33.33333333%}.col-lg-pull-3{right:25%}.col-lg-pull-2{right:16.66666667%}.col-lg-pull-1{right:8.33333333%}.col-lg-pull-0{right:auto}.col-lg-push-12{left:100%}.col-lg-push-11{left:91.66666667%}.col-lg-push-10{left:83.33333333%}.col-lg-push-9{left:75%}.col-lg-push-8{left:66.66666667%}.col-lg-push-7{left:58.33333333%}.col-lg-push-6{left:50%}.col-lg-push-5{left:41.66666667%}.col-lg-push-4{left:33.33333333%}.col-lg-push-3{left:25%}.col-lg-push-2{left:16.66666667%}.col-lg-push-1{left:8.33333333%}.col-lg-push-0{left:auto}.col-lg-offset-12{margin-left:100%}.col-lg-offset-11{margin-left:91.66666667%}.col-lg-offset-10{margin-left:83.33333333%}.col-lg-offset-9{margin-left:75%}.col-lg-offset-8{margin-left:66.66666667%}.col-lg-offset-7{margin-left:58.33333333%}.col-lg-offset-6{margin-left:50%}.col-lg-offset-5{margin-left:41.66666667%}.col-lg-offset-4{margin-left:33.33333333%}.col-lg-offset-3{margin-left:25%}.col-lg-offset-2{margin-left:16.66666667%}.col-lg-offset-1{margin-left:8.33333333%}.col-lg-offset-0{margin-left:0}}.clearfix:before,.clearfix:after,.container:before,.container:after,.container-fluid:before,.container-fluid:after,.row:before,.row:after{content:" ";display:table}.clearfix:after,.container:after,.container-fluid:after,.row:after{clear:both}.center-block{display:block;margin-left:auto;margin-right:auto}.pull-right{float:right !important}.pull-left{float:left !important}.hide{display:none !important}.show{display:block !important}.invisible{visibility:hidden}.text-hide{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0}.hidden{display:none !important}.affix{position:fixed}img{max-width:100%;height:auto}i{font-style:italic}.tac{text-align:center}.tal{text-align:left}.tar{text-align:right}.marb_d{margin-bottom:16px}.clearfix:after{visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0}* html .clearfix{zoom:1}*:first-child+html .clearfix{zoom:1}.show-code{background-color:#262e40;padding:8px;color:#bf6148;font-family:"Sintony",sans-serif;margin-bottom:16px}p,a,li,ul,h1,h2,h3,time{font-size:16px;line-height:1.5em;font-family:"Poppins",sans-serif;letter-spacing:0.05em}p,h1,h2,h3{margin-bottom:16px}p{color:#262e40}h1,h2,h3{color:#8189a5;font-family:"Sintony",sans-serif;margin-top:0px}h1{font-size:2em}h2{font-size:1.5em}b{font-family:"Sintony",sans-serif}.heading--side-borders{display:table;white-space:nowrap}.heading--side-borders:before,.heading--side-borders:after{border-top:1px solid #f5f5f5;content:'';display:table-cell;position:relative;top:0.6em;width:45%}.heading--side-borders:before{right:1.5%}.heading--side-borders:after{left:1.5%}a,a:visited{color:#bf6148}a:hover,.list-post__title:hover{color:#8e3f4d}.main-content ul{list-style:none;padding:0;margin:0}.main-content ul li{padding-left:1em;text-indent:-.7em;margin-bottom:8px}.main-content ul li:before{content:"• ";color:#8189a5}.site-content{padding-top:80px}.site-content-contain img{margin-bottom:16px}.main-content__intro{font-family:"Sintony",sans-serif;color:#999;font-size:18px}.post-intro{color:#909090}.post-meta{border-bottom:1px solid #f5f5f5;margin-bottom:16px}.post-meta__date{float:left}.post-meta__author{float:right}.post-meta__like .fa{color:#bf6148}.list-post{background-color:#262e40;padding:16px}.list-post__title{color:#bf6148;font-size:16px}.list-post__published{color:#8189a5}.home-text h1{font-size:1.5em}.sidebar li{margin-bottom:16px}.content-body{width:90%;margin:0 auto}@media screen and (min-width: 992px){.content-body{width:75%}}#masthead{background-color:rgba(38,46,64,0.9);color:#bf6148;font-family:'Sintony', sans-serif;position:fixed;width:100%;display:flex;justify-content:flex-start;z-index:9999}#site-logo{padding:16px}nav{display:flex;flex-direction:column;justify-content:center}.nav li{display:inline;margin-right:10px}footer{margin:16px 0}.landing-page-band{background-repeat:no-repeat;background-size:100%;background-position:center;position:relative}.landing-page-banner__headline{position:absolute;width:100%;text-align:center;top:0;left:0;display:flex;flex-direction:column;justify-content:center;height:100%}.landing-page-banner__headline h1,.landing-page-banner__headline h2{color:white}.home-content .fa{font-size:2em;color:#bf6148}.home-content h2{color:#bf6148}@media screen and (min-width: 992px){.landing-page-banner__headline h1{font-size:5em}}
+ */
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/* line 10, sass/_bootstrap.scss */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* line 10, sass/_bootstrap.scss */
+body {
+  margin: 0;
+}
+
+/* line 10, sass/_bootstrap.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 10, sass/_bootstrap.scss */
+audio, canvas, progress, video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+/* line 10, sass/_bootstrap.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* line 10, sass/_bootstrap.scss */
+[hidden], template {
+  display: none;
+}
+
+/* line 10, sass/_bootstrap.scss */
+a {
+  background-color: transparent;
+}
+
+/* line 10, sass/_bootstrap.scss */
+a:active, a:hover {
+  outline: 0;
+}
+
+/* line 10, sass/_bootstrap.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* line 10, sass/_bootstrap.scss */
+b, strong {
+  font-weight: bold;
+}
+
+/* line 10, sass/_bootstrap.scss */
+dfn {
+  font-style: italic;
+}
+
+/* line 10, sass/_bootstrap.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* line 10, sass/_bootstrap.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/* line 10, sass/_bootstrap.scss */
+small {
+  font-size: 80%;
+}
+
+/* line 10, sass/_bootstrap.scss */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 10, sass/_bootstrap.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 10, sass/_bootstrap.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 10, sass/_bootstrap.scss */
+img {
+  border: 0;
+}
+
+/* line 10, sass/_bootstrap.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* line 10, sass/_bootstrap.scss */
+figure {
+  margin: 1em 40px;
+}
+
+/* line 10, sass/_bootstrap.scss */
+hr {
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/* line 10, sass/_bootstrap.scss */
+pre {
+  overflow: auto;
+}
+
+/* line 10, sass/_bootstrap.scss */
+code, kbd, pre, samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* line 10, sass/_bootstrap.scss */
+button, input, optgroup, select, textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+/* line 10, sass/_bootstrap.scss */
+button {
+  overflow: visible;
+}
+
+/* line 10, sass/_bootstrap.scss */
+button, select {
+  text-transform: none;
+}
+
+/* line 10, sass/_bootstrap.scss */
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+/* line 10, sass/_bootstrap.scss */
+button[disabled], html input[disabled] {
+  cursor: default;
+}
+
+/* line 10, sass/_bootstrap.scss */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 10, sass/_bootstrap.scss */
+input {
+  line-height: normal;
+}
+
+/* line 10, sass/_bootstrap.scss */
+input[type="checkbox"], input[type="radio"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* line 10, sass/_bootstrap.scss */
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/* line 10, sass/_bootstrap.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* line 10, sass/_bootstrap.scss */
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 10, sass/_bootstrap.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/* line 10, sass/_bootstrap.scss */
+legend {
+  border: 0;
+  padding: 0;
+}
+
+/* line 10, sass/_bootstrap.scss */
+textarea {
+  overflow: auto;
+}
+
+/* line 10, sass/_bootstrap.scss */
+optgroup {
+  font-weight: bold;
+}
+
+/* line 10, sass/_bootstrap.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 10, sass/_bootstrap.scss */
+td, th {
+  padding: 0;
+}
+
+/* line 10, sass/_bootstrap.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 10, sass/_bootstrap.scss */
+*:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 10, sass/_bootstrap.scss */
+html {
+  font-size: 10px;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* line 10, sass/_bootstrap.scss */
+body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff;
+}
+
+/* line 10, sass/_bootstrap.scss */
+input, button, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/* line 10, sass/_bootstrap.scss */
+a {
+  color: #337ab7;
+  text-decoration: none;
+}
+
+/* line 10, sass/_bootstrap.scss */
+a:hover, a:focus {
+  color: #23527c;
+  text-decoration: underline;
+}
+
+/* line 10, sass/_bootstrap.scss */
+a:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+/* line 10, sass/_bootstrap.scss */
+figure {
+  margin: 0;
+}
+
+/* line 10, sass/_bootstrap.scss */
+img {
+  vertical-align: middle;
+}
+
+/* line 10, sass/_bootstrap.scss */
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 10, sass/_bootstrap.scss */
+.img-rounded {
+  border-radius: 6px;
+}
+
+/* line 10, sass/_bootstrap.scss */
+.img-thumbnail {
+  padding: 4px;
+  line-height: 1.42857143;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 10, sass/_bootstrap.scss */
+.img-circle {
+  border-radius: 50%;
+}
+
+/* line 10, sass/_bootstrap.scss */
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eee;
+}
+
+/* line 10, sass/_bootstrap.scss */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* line 10, sass/_bootstrap.scss */
+.sr-only-focusable:active, .sr-only-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+}
+
+/* line 10, sass/_bootstrap.scss */
+[role="button"] {
+  cursor: pointer;
+}
+
+/* line 10, sass/_bootstrap.scss */
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (min-width: 768px) {
+  /* line 10, sass/_bootstrap.scss */
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 10, sass/_bootstrap.scss */
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 10, sass/_bootstrap.scss */
+  .container {
+    width: 1170px;
+  }
+}
+/* line 10, sass/_bootstrap.scss */
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* line 10, sass/_bootstrap.scss */
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+/* line 10, sass/_bootstrap.scss */
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* line 10, sass/_bootstrap.scss */
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+  float: left;
+}
+
+/* line 10, sass/_bootstrap.scss */
+.col-xs-12 {
+  width: 100%;
+}
+
+/* line 10, sass/_bootstrap.scss */
+.col-xs-11 {
+  width: 91.66666667%;
+}
+
+/* line 10, sass/_bootstrap.scss */
+.col-xs-10 {
+  width: 83.33333333%;
+}
+
+/* line 10, sass/_bootstrap.scss */
+.col-xs-9 {
+  width: 75%;
+}
+
+/* line 10, sass/_bootstrap.scss */
+.col-xs-8 {
+  width: 66.66666667%;
+}
+
+/* line 10, sass/_bootstrap.scss */
+.col-xs-7 {
+  width: 58.33333333%;
+}
+
+/* line 10, sass/_bootstrap.scss */
+.col-xs-6 {
+  width: 50%;
+}
+
+/* line 10, sass/_bootstrap.scss */
+.col-xs-5 {
+  width: 41.66666667%;
+}
+
+/* line 10, sass/_bootstrap.scss */
+.col-xs-4 {
+  width: 33.33333333%;
+}
+
+/* line 10, sass/_bootstrap.scss */
+.col-xs-3 {
+  width: 25%;
+}
+
+/* line 10, sass/_bootstrap.scss */
+.col-xs-2 {
+  width: 16.66666667%;
+}
+
+/* line 10, sass/_bootstrap.scss */
+.col-xs-1 {
+  width: 8.33333333%;
+}
+
+/* line 10, sass/_bootstrap.scss */
+.col-xs-pull-12 {
+  right: 100%;
+}
+
+/* line 10, sass/_bootstrap.scss */
+.col-xs-pull-11 {
+  right: 91.66666667%;
+}
+
+/* line 10, sass/_bootstrap.scss */
+.col-xs-pull-10 {
+  right: 83.33333333%;
+}
+
+/* line 10, sass/_bootstrap.scss */
+.col-xs-pull-9 {
+  right: 75%;
+}
+
+/* line 10, sass/_bootstrap.scss */
+.col-xs-pull-8 {
+  right: 66.66666667%;
+}
+
+/* line 10, sass/_bootstrap.scss */
+.col-xs-pull-7 {
+  right: 58.33333333%;
+}
+
+/* line 10, sass/_bootstrap.scss */
+.col-xs-pull-6 {
+  right: 50%;
+}
+
+/* line 10, sass/_bootstrap.scss */
+.col-xs-pull-5 {
+  right: 41.66666667%;
+}
+
+/* line 10, sass/_bootstrap.scss */
+.col-xs-pull-4 {
+  right: 33.33333333%;
+}
+
+/* line 10, sass/_bootstrap.scss */
+.col-xs-pull-3 {
+  right: 25%;
+}
+
+/* line 10, sass/_bootstrap.scss */
+.col-xs-pull-2 {
+  right: 16.66666667%;
+}
+
+/* line 10, sass/_bootstrap.scss */
+.col-xs-pull-1 {
+  right: 8.33333333%;
+}
+
+/* line 10, sass/_bootstrap.scss */
+.col-xs-pull-0 {
+  right: auto;
+}
+
+/* line 10, sass/_bootstrap.scss */
+.col-xs-push-12 {
+  left: 100%;
+}
+
+/* line 10, sass/_bootstrap.scss */
+.col-xs-push-11 {
+  left: 91.66666667%;
+}
+
+/* line 10, sass/_bootstrap.scss */
+.col-xs-push-10 {
+  left: 83.33333333%;
+}
+
+/* line 10, sass/_bootstrap.scss */
+.col-xs-push-9 {
+  left: 75%;
+}
+
+/* line 10, sass/_bootstrap.scss */
+.col-xs-push-8 {
+  left: 66.66666667%;
+}
+
+/* line 10, sass/_bootstrap.scss */
+.col-xs-push-7 {
+  left: 58.33333333%;
+}
+
+/* line 10, sass/_bootstrap.scss */
+.col-xs-push-6 {
+  left: 50%;
+}
+
+/* line 10, sass/_bootstrap.scss */
+.col-xs-push-5 {
+  left: 41.66666667%;
+}
+
+/* line 10, sass/_bootstrap.scss */
+.col-xs-push-4 {
+  left: 33.33333333%;
+}
+
+/* line 10, sass/_bootstrap.scss */
+.col-xs-push-3 {
+  left: 25%;
+}
+
+/* line 10, sass/_bootstrap.scss */
+.col-xs-push-2 {
+  left: 16.66666667%;
+}
+
+/* line 10, sass/_bootstrap.scss */
+.col-xs-push-1 {
+  left: 8.33333333%;
+}
+
+/* line 10, sass/_bootstrap.scss */
+.col-xs-push-0 {
+  left: auto;
+}
+
+/* line 10, sass/_bootstrap.scss */
+.col-xs-offset-12 {
+  margin-left: 100%;
+}
+
+/* line 10, sass/_bootstrap.scss */
+.col-xs-offset-11 {
+  margin-left: 91.66666667%;
+}
+
+/* line 10, sass/_bootstrap.scss */
+.col-xs-offset-10 {
+  margin-left: 83.33333333%;
+}
+
+/* line 10, sass/_bootstrap.scss */
+.col-xs-offset-9 {
+  margin-left: 75%;
+}
+
+/* line 10, sass/_bootstrap.scss */
+.col-xs-offset-8 {
+  margin-left: 66.66666667%;
+}
+
+/* line 10, sass/_bootstrap.scss */
+.col-xs-offset-7 {
+  margin-left: 58.33333333%;
+}
+
+/* line 10, sass/_bootstrap.scss */
+.col-xs-offset-6 {
+  margin-left: 50%;
+}
+
+/* line 10, sass/_bootstrap.scss */
+.col-xs-offset-5 {
+  margin-left: 41.66666667%;
+}
+
+/* line 10, sass/_bootstrap.scss */
+.col-xs-offset-4 {
+  margin-left: 33.33333333%;
+}
+
+/* line 10, sass/_bootstrap.scss */
+.col-xs-offset-3 {
+  margin-left: 25%;
+}
+
+/* line 10, sass/_bootstrap.scss */
+.col-xs-offset-2 {
+  margin-left: 16.66666667%;
+}
+
+/* line 10, sass/_bootstrap.scss */
+.col-xs-offset-1 {
+  margin-left: 8.33333333%;
+}
+
+/* line 10, sass/_bootstrap.scss */
+.col-xs-offset-0 {
+  margin-left: 0;
+}
+
+@media (min-width: 768px) {
+  /* line 10, sass/_bootstrap.scss */
+  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+    float: left;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-sm-12 {
+    width: 100%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-sm-11 {
+    width: 91.66666667%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-sm-10 {
+    width: 83.33333333%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-sm-9 {
+    width: 75%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-sm-8 {
+    width: 66.66666667%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-sm-7 {
+    width: 58.33333333%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-sm-6 {
+    width: 50%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-sm-5 {
+    width: 41.66666667%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-sm-4 {
+    width: 33.33333333%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-sm-3 {
+    width: 25%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-sm-2 {
+    width: 16.66666667%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-sm-1 {
+    width: 8.33333333%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-sm-pull-12 {
+    right: 100%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-sm-pull-11 {
+    right: 91.66666667%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-sm-pull-10 {
+    right: 83.33333333%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-sm-pull-9 {
+    right: 75%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-sm-pull-8 {
+    right: 66.66666667%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-sm-pull-7 {
+    right: 58.33333333%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-sm-pull-6 {
+    right: 50%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-sm-pull-5 {
+    right: 41.66666667%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-sm-pull-4 {
+    right: 33.33333333%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-sm-pull-3 {
+    right: 25%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-sm-pull-2 {
+    right: 16.66666667%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-sm-pull-1 {
+    right: 8.33333333%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-sm-pull-0 {
+    right: auto;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-sm-push-12 {
+    left: 100%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-sm-push-11 {
+    left: 91.66666667%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-sm-push-10 {
+    left: 83.33333333%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-sm-push-9 {
+    left: 75%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-sm-push-8 {
+    left: 66.66666667%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-sm-push-7 {
+    left: 58.33333333%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-sm-push-6 {
+    left: 50%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-sm-push-5 {
+    left: 41.66666667%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-sm-push-4 {
+    left: 33.33333333%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-sm-push-3 {
+    left: 25%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-sm-push-2 {
+    left: 16.66666667%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-sm-push-1 {
+    left: 8.33333333%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-sm-push-0 {
+    left: auto;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-sm-offset-12 {
+    margin-left: 100%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-sm-offset-11 {
+    margin-left: 91.66666667%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-sm-offset-10 {
+    margin-left: 83.33333333%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-sm-offset-9 {
+    margin-left: 75%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-sm-offset-8 {
+    margin-left: 66.66666667%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-sm-offset-7 {
+    margin-left: 58.33333333%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-sm-offset-6 {
+    margin-left: 50%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-sm-offset-5 {
+    margin-left: 41.66666667%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-sm-offset-4 {
+    margin-left: 33.33333333%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-sm-offset-3 {
+    margin-left: 25%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-sm-offset-2 {
+    margin-left: 16.66666667%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-sm-offset-1 {
+    margin-left: 8.33333333%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-sm-offset-0 {
+    margin-left: 0;
+  }
+}
+@media (min-width: 992px) {
+  /* line 10, sass/_bootstrap.scss */
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-md-12 {
+    width: 100%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-md-11 {
+    width: 91.66666667%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-md-10 {
+    width: 83.33333333%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-md-9 {
+    width: 75%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-md-8 {
+    width: 66.66666667%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-md-7 {
+    width: 58.33333333%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-md-6 {
+    width: 50%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-md-5 {
+    width: 41.66666667%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-md-4 {
+    width: 33.33333333%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-md-3 {
+    width: 25%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-md-2 {
+    width: 16.66666667%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-md-1 {
+    width: 8.33333333%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-md-pull-12 {
+    right: 100%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-md-pull-11 {
+    right: 91.66666667%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-md-pull-10 {
+    right: 83.33333333%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-md-pull-9 {
+    right: 75%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-md-pull-8 {
+    right: 66.66666667%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-md-pull-7 {
+    right: 58.33333333%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-md-pull-6 {
+    right: 50%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-md-pull-5 {
+    right: 41.66666667%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-md-pull-4 {
+    right: 33.33333333%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-md-pull-3 {
+    right: 25%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-md-pull-2 {
+    right: 16.66666667%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-md-pull-1 {
+    right: 8.33333333%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-md-pull-0 {
+    right: auto;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-md-push-12 {
+    left: 100%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-md-push-11 {
+    left: 91.66666667%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-md-push-10 {
+    left: 83.33333333%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-md-push-9 {
+    left: 75%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-md-push-8 {
+    left: 66.66666667%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-md-push-7 {
+    left: 58.33333333%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-md-push-6 {
+    left: 50%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-md-push-5 {
+    left: 41.66666667%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-md-push-4 {
+    left: 33.33333333%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-md-push-3 {
+    left: 25%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-md-push-2 {
+    left: 16.66666667%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-md-push-1 {
+    left: 8.33333333%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-md-push-0 {
+    left: auto;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-md-offset-12 {
+    margin-left: 100%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-md-offset-11 {
+    margin-left: 91.66666667%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-md-offset-10 {
+    margin-left: 83.33333333%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-md-offset-9 {
+    margin-left: 75%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-md-offset-8 {
+    margin-left: 66.66666667%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-md-offset-7 {
+    margin-left: 58.33333333%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-md-offset-6 {
+    margin-left: 50%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-md-offset-5 {
+    margin-left: 41.66666667%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-md-offset-4 {
+    margin-left: 33.33333333%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-md-offset-3 {
+    margin-left: 25%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-md-offset-2 {
+    margin-left: 16.66666667%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-md-offset-1 {
+    margin-left: 8.33333333%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-md-offset-0 {
+    margin-left: 0;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 10, sass/_bootstrap.scss */
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+    float: left;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-lg-12 {
+    width: 100%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-lg-11 {
+    width: 91.66666667%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-lg-10 {
+    width: 83.33333333%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-lg-9 {
+    width: 75%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-lg-8 {
+    width: 66.66666667%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-lg-7 {
+    width: 58.33333333%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-lg-6 {
+    width: 50%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-lg-5 {
+    width: 41.66666667%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-lg-4 {
+    width: 33.33333333%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-lg-3 {
+    width: 25%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-lg-2 {
+    width: 16.66666667%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-lg-1 {
+    width: 8.33333333%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-lg-pull-12 {
+    right: 100%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-lg-pull-11 {
+    right: 91.66666667%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-lg-pull-10 {
+    right: 83.33333333%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-lg-pull-9 {
+    right: 75%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-lg-pull-8 {
+    right: 66.66666667%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-lg-pull-7 {
+    right: 58.33333333%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-lg-pull-6 {
+    right: 50%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-lg-pull-5 {
+    right: 41.66666667%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-lg-pull-4 {
+    right: 33.33333333%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-lg-pull-3 {
+    right: 25%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-lg-pull-2 {
+    right: 16.66666667%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-lg-pull-1 {
+    right: 8.33333333%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-lg-pull-0 {
+    right: auto;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-lg-push-12 {
+    left: 100%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-lg-push-11 {
+    left: 91.66666667%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-lg-push-10 {
+    left: 83.33333333%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-lg-push-9 {
+    left: 75%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-lg-push-8 {
+    left: 66.66666667%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-lg-push-7 {
+    left: 58.33333333%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-lg-push-6 {
+    left: 50%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-lg-push-5 {
+    left: 41.66666667%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-lg-push-4 {
+    left: 33.33333333%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-lg-push-3 {
+    left: 25%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-lg-push-2 {
+    left: 16.66666667%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-lg-push-1 {
+    left: 8.33333333%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-lg-push-0 {
+    left: auto;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-lg-offset-12 {
+    margin-left: 100%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-lg-offset-11 {
+    margin-left: 91.66666667%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-lg-offset-10 {
+    margin-left: 83.33333333%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-lg-offset-9 {
+    margin-left: 75%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-lg-offset-8 {
+    margin-left: 66.66666667%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-lg-offset-7 {
+    margin-left: 58.33333333%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-lg-offset-6 {
+    margin-left: 50%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-lg-offset-5 {
+    margin-left: 41.66666667%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-lg-offset-4 {
+    margin-left: 33.33333333%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-lg-offset-3 {
+    margin-left: 25%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-lg-offset-2 {
+    margin-left: 16.66666667%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-lg-offset-1 {
+    margin-left: 8.33333333%;
+  }
+
+  /* line 10, sass/_bootstrap.scss */
+  .col-lg-offset-0 {
+    margin-left: 0;
+  }
+}
+/* line 10, sass/_bootstrap.scss */
+.clearfix:before, .clearfix:after, .container:before, .container:after, .container-fluid:before, .container-fluid:after, .row:before, .row:after {
+  content: " ";
+  display: table;
+}
+
+/* line 10, sass/_bootstrap.scss */
+.clearfix:after, .container:after, .container-fluid:after, .row:after {
+  clear: both;
+}
+
+/* line 10, sass/_bootstrap.scss */
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 10, sass/_bootstrap.scss */
+.pull-right {
+  float: right !important;
+}
+
+/* line 10, sass/_bootstrap.scss */
+.pull-left {
+  float: left !important;
+}
+
+/* line 10, sass/_bootstrap.scss */
+.hide {
+  display: none !important;
+}
+
+/* line 10, sass/_bootstrap.scss */
+.show {
+  display: block !important;
+}
+
+/* line 10, sass/_bootstrap.scss */
+.invisible {
+  visibility: hidden;
+}
+
+/* line 10, sass/_bootstrap.scss */
+.text-hide {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+
+/* line 10, sass/_bootstrap.scss */
+.hidden {
+  display: none !important;
+}
+
+/* line 10, sass/_bootstrap.scss */
+.affix {
+  position: fixed;
+}
+
+/* Colours */
+/* Media Queries */
+/* borders */
+/* line 40, sass/_variables.scss */
+.bottom-border {
+  border-bottom: 1px solid #f5f5f5;
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+}
+
+/* Flex */
+/* line 55, sass/_variables.scss */
+.flex-vert, .flex-across {
+  display: flex;
+  align-items: center;
+}
+
+/* line 62, sass/_variables.scss */
+.flex-across {
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* Responsive Images */
+/* line 2, sass/_generic.scss */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 7, sass/_generic.scss */
+i {
+  font-style: italic;
+}
+
+/* text aligns */
+/* line 9, sass/_generic.scss */
+.tac {
+  text-align: center;
+}
+
+/* line 10, sass/_generic.scss */
+.tal {
+  text-align: left;
+}
+
+/* line 11, sass/_generic.scss */
+.tar {
+  text-align: right;
+}
+
+/* Margins */
+/* line 14, sass/_generic.scss */
+.marb_d {
+  margin-bottom: 16px;
+}
+
+/* Clear */
+/* line 17, sass/_generic.scss */
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+/* line 25, sass/_generic.scss */
+* html .clearfix {
+  zoom: 1;
+}
+
+/* IE6 */
+/* line 26, sass/_generic.scss */
+*:first-child + html .clearfix {
+  zoom: 1;
+}
+
+/* IE7 */
+/* line 28, sass/_generic.scss */
+.show-code {
+  background-color: #262E40;
+  padding: 8px;
+  color: #BF6148;
+  font-family: "Sintony", sans-serif;
+  margin-bottom: 16px;
+}
+
+/* line 1, sass/_text.scss */
+p, a, li, ul, h1, h2, h3, time {
+  font-size: 16px;
+  line-height: 1.5em;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.05em;
+}
+
+/* line 8, sass/_text.scss */
+p, h1, h2, h3 {
+  margin-bottom: 16px;
+}
+
+/* line 12, sass/_text.scss */
+p {
+  color: #262E40;
+}
+
+/* line 14, sass/_text.scss */
+h1, h2, h3 {
+  color: #8189A5;
+  font-family: "Sintony", sans-serif;
+  margin-top: 0px;
+}
+
+/* line 19, sass/_text.scss */
+h1 {
+  font-size: 2em;
+}
+
+/* line 20, sass/_text.scss */
+h2 {
+  font-size: 1.5em;
+}
+
+/* line 22, sass/_text.scss */
+b {
+  font-family: "Sintony",sans-serif;
+}
+
+/* Headings */
+/* line 25, sass/_text.scss */
+.heading--side-borders {
+  display: table;
+  white-space: nowrap;
+}
+/* line 28, sass/_text.scss */
+.heading--side-borders:before, .heading--side-borders:after {
+  border-top: 1px solid #f5f5f5;
+  content: '';
+  display: table-cell;
+  position: relative;
+  top: 0.6em;
+  width: 45%;
+}
+/* line 36, sass/_text.scss */
+.heading--side-borders:before {
+  right: 1.5%;
+}
+/* line 37, sass/_text.scss */
+.heading--side-borders:after {
+  left: 1.5%;
+}
+
+/* Links */
+/* line 42, sass/_text.scss */
+a, a:visited {
+  color: #BF6148;
+}
+
+/* line 45, sass/_text.scss */
+a:hover {
+  color: #8E3F4D;
+}
+
+/* Lists */
+/* line 50, sass/_text.scss */
+.main-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/* line 54, sass/_text.scss */
+.main-content ul li {
+  padding-left: 1em;
+  text-indent: -.7em;
+  margin-bottom: 8px;
+}
+/* line 59, sass/_text.scss */
+.main-content ul li:before {
+  content: "• ";
+  color: #8189A5;
+}
+
+/* line 1, sass/_forms.scss */
+.contact-form .frm_fields_container label.frm_primary_label {
+  font-family: "Sintony", sans-serif;
+  font-weight: initial;
+}
+
+/* line 6, sass/_forms.scss */
+.contact-form .frm_fields_container .frm_button_submit.contact-form__button {
+  font-family: "Sintony", sans-serif;
+  background-color: #BF6148;
+  border: 0px;
+  color: white;
+  height: 44px;
+  width: 100%;
+}
+@media only screen and (min-width: 560px) {
+  /* line 6, sass/_forms.scss */
+  .contact-form .frm_fields_container .frm_button_submit.contact-form__button {
+    width: 50%;
+  }
+}
+
+/* line 18, sass/_forms.scss */
+.contact-form .frm_fields_container .frm_button_submit.contact-form__button:hover {
+  background-color: #8189A5;
+  transition: 0.2s ease;
+  color: white;
+}
+
+/* line 1, sass/_layout.scss */
+.site-content {
+  padding-top: 80px;
+}
+
+/* Posts */
+/* line 6, sass/_layout.scss */
+.site-content-contain img {
+  margin-bottom: 16px;
+}
+
+/* line 10, sass/_layout.scss */
+.main-content__intro {
+  font-family: "Sintony", sans-serif;
+  color: #999;
+  font-size: 18px;
+}
+
+/* line 15, sass/_layout.scss */
+.post-intro {
+  color: #909090;
+}
+
+/* line 18, sass/_layout.scss */
+.post-meta {
+  border-bottom: 1px solid #f5f5f5;
+  margin-bottom: 16px;
+}
+
+/* line 22, sass/_layout.scss */
+.post-meta__date {
+  float: left;
+}
+
+/* line 25, sass/_layout.scss */
+.post-meta__author {
+  float: right;
+}
+
+/* line 28, sass/_layout.scss */
+.post-meta__like .fa {
+  color: #BF6148;
+}
+
+/* List Posts */
+@media only screen and (min-width: 560px) {
+  /* line 38, sass/_layout.scss */
+  .list-posts {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+  }
+}
+
+/* line 45, sass/_layout.scss */
+.list-post {
+  background-color: #262E40;
+  padding: 16px;
+  display: block;
+  width: 100%;
+}
+@media only screen and (min-width: 560px) {
+  /* line 45, sass/_layout.scss */
+  .list-post {
+    width: 32%;
+    margin-right: 10px;
+  }
+}
+
+/* line 55, sass/_layout.scss */
+.list-post:nth-child(3) {
+  margin-right: 0px;
+}
+
+/* line 58, sass/_layout.scss */
+.list-post:hover {
+  text-decoration: none;
+  background-color: #8189A5;
+  transition: 0.5s ease;
+}
+
+/* line 63, sass/_layout.scss */
+.list-post:hover .list-post__published, .list-post:hover .list-post__title {
+  color: #8E3F4D;
+}
+
+/* line 66, sass/_layout.scss */
+.list-post:hover .list-post__title {
+  padding-left: 5px;
+}
+
+/* line 69, sass/_layout.scss */
+.list-post__title {
+  color: #BF6148;
+  font-size: 16px;
+}
+
+/* line 73, sass/_layout.scss */
+.list-post__published {
+  color: #8189A5;
+}
+
+/* Sidebar */
+/* line 78, sass/_layout.scss */
+.home-text h1 {
+  font-size: 1.5em;
+}
+
+/* line 81, sass/_layout.scss */
+.sidebar li {
+  margin-bottom: 16px;
+}
+
+/* Default content */
+/* line 87, sass/_layout.scss */
+.content-body, .home-content__intro {
+  width: 90%;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 992px) {
+  /* line 92, sass/_layout.scss */
+  .content-body {
+    width: 75%;
+  }
+}
+/* line 97, sass/_layout.scss */
+.content__sub-title {
+  display: flex;
+  align-items: center;
+}
+/* line 100, sass/_layout.scss */
+.content__sub-title h3 {
+  margin-bottom: 0px;
+}
+/* line 103, sass/_layout.scss */
+.content__sub-title span {
+  margin-right: 10px;
+}
+
+/* Footer */
+/* line 109, sass/_layout.scss */
+footer {
+  margin: 16px 0;
+}
+
+/* line 1, sass/_masthead.scss */
+#masthead {
+  background-color: rgba(38, 46, 64, 0.9);
+  color: #BF6148;
+  font-family: 'Sintony', sans-serif;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  z-index: 9999;
+  align-items: center;
+}
+
+/* line 13, sass/_masthead.scss */
+#site-logo {
+  padding: 16px;
+  width: 75%;
+}
+
+/* line 17, sass/_masthead.scss */
+nav {
+  display: none;
+  width: 100%;
+  padding: 0px 16px 8px 16px;
+}
+
+/* line 23, sass/_masthead.scss */
+.nav li {
+  display: block;
+}
+
+/* line 27, sass/_masthead.scss */
+.mobile-nav__icon {
+  width: 25%;
+}
+
+/* line 30, sass/_masthead.scss */
+.mobile-nav__icon-inner {
+  float: right;
+  width: 20px;
+  height: 16px;
+  margin: 8px;
+  position: relative;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+@media only screen and (min-width: 768px) {
+  /* line 30, sass/_masthead.scss */
+  .mobile-nav__icon-inner {
+    display: none;
+  }
+}
+
+/* line 51, sass/_masthead.scss */
+.mobile-nav__icon-inner span {
+  display: block;
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background: #E06769;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+/* line 70, sass/_masthead.scss */
+.mobile-nav__icon-inner span:nth-child(1) {
+  top: 0px;
+}
+
+/* line 74, sass/_masthead.scss */
+.mobile-nav__icon-inner span:nth-child(2), .mobile-nav__icon-inner span:nth-child(3) {
+  top: 6px;
+}
+
+/* line 78, sass/_masthead.scss */
+.mobile-nav__icon-inner span:nth-child(4) {
+  top: 12px;
+}
+
+/* line 82, sass/_masthead.scss */
+.mobile-nav__icon-inner--active span:nth-child(1) {
+  top: 6px;
+  width: 0%;
+  left: 50%;
+}
+
+/* line 88, sass/_masthead.scss */
+.mobile-nav__icon-inner--active span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* line 95, sass/_masthead.scss */
+.mobile-nav__icon-inner--active span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+/* line 102, sass/_masthead.scss */
+.mobile-nav__icon-inner--active span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+@media only screen and (min-width: 640px) {
+  /* line 111, sass/_masthead.scss */
+  .mobile-nav__icon {
+    display: none;
+  }
+
+  /* line 114, sass/_masthead.scss */
+  #masthead {
+    background-color: rgba(38, 46, 64, 0.9);
+    color: #BF6148;
+    font-family: 'Sintony', sans-serif;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    z-index: 9999;
+  }
+
+  /* line 124, sass/_masthead.scss */
+  #site-logo, nav {
+    width: auto;
+    display: block;
+  }
+
+  /* line 128, sass/_masthead.scss */
+  nav {
+    padding: 0px;
+  }
+
+  /* line 132, sass/_masthead.scss */
+  .nav li {
+    display: inline;
+    margin-right: 10px;
+  }
+
+  /* line 137, sass/_masthead.scss */
+  .nav li a:hover {
+    text-decoration: none;
+    color: #8E3F4D;
+  }
+}
+/* line 1, sass/_home.scss */
+.landing-page-band {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  position: relative;
+}
+
+/* line 7, sass/_home.scss */
+.landing-page-banner__headline {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+/* line 17, sass/_home.scss */
+.landing-page-banner__headline h1, .landing-page-banner__headline h2 {
+  color: white;
+}
+
+/* line 22, sass/_home.scss */
+.home-content .fa {
+  font-size: 2em;
+  color: #BF6148;
+}
+
+/* line 26, sass/_home.scss */
+.home-content h2 {
+  color: #BF6148;
+}
+
+@media screen and (min-width: 992px) {
+  /* line 32, sass/_home.scss */
+  .landing-page-banner__headline h1 {
+    font-size: 3em;
+  }
+}

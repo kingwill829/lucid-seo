@@ -21,6 +21,7 @@ h2 {font-size:1.5em;}
 
 b {font-family: "Sintony",sans-serif;}
 
+/* Headings */
 .heading--side-borders {
     display: table;
     white-space: nowrap;
@@ -41,7 +42,7 @@ b {font-family: "Sintony",sans-serif;}
 a, a:visited {
 	color:$orange;
 }
-a:hover,.list-post__title:hover {
+a:hover {
 	color:$light_red;
 }
 

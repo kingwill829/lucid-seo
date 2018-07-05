@@ -2,6 +2,8 @@
 
 <div class="container">
 	<main class="col-md-12">
+		
+		<div class="list-posts">
 			<?php
 			if ( have_posts() ) :
 
@@ -18,7 +20,7 @@
 			<?php endif;
 			?>
 
-
+		</div>
 	</main>
 
 

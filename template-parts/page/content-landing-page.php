@@ -12,10 +12,9 @@
 
 </div>
 
-<container>
+
 	<section class="content-body">
 		<p><?php the_field('landing_page_intro'); ?></p>
 		<h2 class="tac"><?php the_field('landing_page_sub_heading_2'); ?></h2>
 		<?php the_content(); ?>
 	</section>
-</container>

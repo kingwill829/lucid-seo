@@ -1,0 +1,22 @@
+.contact-form .frm_fields_container label.frm_primary_label {
+	font-family:$heading;
+	font-weight: initial;
+}
+
+.contact-form .frm_fields_container .frm_button_submit.contact-form__button {
+	font-family:$heading;
+	background-color:$orange;
+	border:0px;
+	color:white;
+	height:44px;
+	width:100%;
+	@include media_query('phablet') {
+		width:50%;
+	}
+}
+
+.contact-form .frm_fields_container .frm_button_submit.contact-form__button:hover {
+	background-color:$light_blue;
+	transition:0.2s ease;
+	color:white;
+}

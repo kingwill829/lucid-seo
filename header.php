@@ -47,7 +47,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <img src="<?php echo LOGO ?>" alt="Lucid SEO logo" width="150"/>
       </a>
     </section>
-
+    <div class="mobile-nav__icon">
+      <div class="mobile-nav__icon-inner">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>  
+    </div> 
+    
       <?php wp_nav_menu( array(
         'theme_location' => 'primary-menu',
         'container' => 'nav',

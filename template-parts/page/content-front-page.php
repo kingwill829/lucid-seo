@@ -14,16 +14,14 @@
 
 
 <div class="container">
-	<section class="home-content">
-		<p><?php the_field('home_intro_text'); ?></p>
+	<section class="">
+
+		<div class="home-content__intro"><?php the_field('home_intro_text'); ?></div>
 		<h2 class="tac heading--side-borders"><?php the_field('home_services_heading'); ?></h2>
 		
 		<div class="col-md-4">
-			<div class="heading--side-borders">
-				<span class="fa fa-cogs"></span>&nbsp;<h3 class="tac"><?php the_field('home_block_title_1'); ?></h3>
-			</div>
-			<div class="tac marb_d">
-				<span class="fa fa-cogs"></span>
+			<div class="content__sub-title">
+				<span class="fa fa-cogs"></span>&nbsp;<h3><?php the_field('home_block_title_1'); ?></h3>
 			</div>
 			<p><?php the_field('home_block_text_1'); ?></p>
 			<?php if( get_field('home_block_link_1') ): ?>
@@ -34,9 +32,8 @@
 
 		</div>
 		<div class="col-md-4">
-			<h3 class="tac heading--side-borders"><?php the_field('home_block_title_2'); ?></h3>
-			<div class="tac marb_d">
-				<span class="fa fa-line-chart"></span>
+			<div class="content__sub-title">
+				<span class="fa fa-line-chart"></span>&nbsp;<h3><?php the_field('home_block_title_2'); ?></h3>
 			</div>
 			<p><?php the_field('home_block_text_2'); ?></p>
 			<?php if( get_field('home_block_link_2') ): ?>
@@ -46,9 +43,8 @@
 			<?php endif; ?>
 		</div>
 		<div class="col-md-4">
-			<h3 class="tac heading--side-borders"><?php the_field('home_block_title_3'); ?></h3>
-			<div class="tac marb_d">
-				<span class="fa fa-credit-card"></span>
+			<div class="content__sub-title">
+				<span class="fa fa-credit-card"></span>&nbsp;<h3><?php the_field('home_block_title_3'); ?></h3>
 			</div>
 			<p><?php the_field('home_block_text_3'); ?></p>
 			<?php if( get_field('home_block_link_3') ): ?>
@@ -63,6 +59,7 @@
 	<section>
 		<hr />
 		<h2 class="tac">Latest Blog Posts</h2>
+		<div class="list-posts">
 		<?php
 			$query = 'posts_per_page=10';
 			$queryObject = new WP_Query($query);
@@ -74,8 +71,6 @@
 				}
 			}
 		?>
-		<div>
-
 		</div>
 	</section>
 </div>
